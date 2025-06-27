@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://depv8o2wk0mfr"]
+
+[ext_resource type="Script" path="res://objects/game.gd" id="1_a2fdh"]
+[ext_resource type="AudioStream" uid="uid://dvkmlxme17nvi" path="res://assets/music/fisticuffs_and_ale.ogg" id="2_t7877"]
+[ext_resource type="PackedScene" uid="uid://bptlackg3xlyt" path="res://objects/gameplay_area.tscn" id="3_7xsys"]
+[ext_resource type="PackedScene" uid="uid://bvpwlkwbptrjd" path="res://objects/ui_sprite_selector.tscn" id="4_gbpag"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_a2fdh")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_t7877")
+autoplay = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="GameplayArea" parent="CanvasLayer" instance=ExtResource("3_7xsys")]
+
+[node name="UISpriteSelector" parent="CanvasLayer" instance=ExtResource("4_gbpag")]

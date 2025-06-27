@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://bpxg5ok60h4yb"]
+
+[ext_resource type="Script" path="res://objects/main_menu.gd" id="1_nxha8"]
+[ext_resource type="FontFile" uid="uid://df3y0gvbc3p7c" path="res://assets/fonts/smalle.fnt" id="2_h64xl"]
+[ext_resource type="Texture2D" uid="uid://b6ahnawctji3o" path="res://assets/spritesheets/main_menu.png" id="2_jnk52"]
+[ext_resource type="FontFile" uid="uid://do2f8raw5b4k5" path="res://assets/fonts/magic_forest.fnt" id="3_b0nlg"]
+
+[node name="MainMenu" type="Node2D"]
+script = ExtResource("1_nxha8")
+
+[node name="BackgroundImage" type="Sprite2D" parent="."]
+texture = ExtResource("2_jnk52")
+centered = false
+
+[node name="Container" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(360, 160)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 160.0
+offset_right = 360.0
+offset_bottom = 320.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="Container"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_b0nlg")
+theme_override_font_sizes/font_size = 36
+text = "FISHLECIA'S
+FASHIONISTA"
+horizontal_alignment = 1
+
+[node name="Subtitle" type="Label" parent="Container"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_h64xl")
+theme_override_font_sizes/font_size = 32
+text = "press anything"
+horizontal_alignment = 1

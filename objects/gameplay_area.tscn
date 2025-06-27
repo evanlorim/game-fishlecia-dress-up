@@ -1,0 +1,129 @@
+[gd_scene load_steps=16 format=3 uid="uid://bptlackg3xlyt"]
+
+[ext_resource type="Script" path="res://objects/gameplay_area.gd" id="1_86spa"]
+[ext_resource type="Texture2D" uid="uid://bca8rfoioerj3" path="res://assets/spritesheets/bottom.png" id="2_kbeih"]
+[ext_resource type="Script" path="res://objects/layer.gd" id="2_oyyh4"]
+[ext_resource type="Texture2D" uid="uid://bk3eg5grf8cmw" path="res://assets/spritesheets/face.png" id="4_plg1i"]
+[ext_resource type="Texture2D" uid="uid://dxjdrhs30xxu2" path="res://assets/spritesheets/footwear.png" id="5_eaeb4"]
+[ext_resource type="Script" path="res://objects/pose_layer.gd" id="5_o3um8"]
+[ext_resource type="Texture2D" uid="uid://bvv6rt86ceh3r" path="res://assets/spritesheets/hair_back.png" id="6_ambhk"]
+[ext_resource type="Texture2D" uid="uid://cxq0tnf25mnbx" path="res://assets/spritesheets/hair_front.png" id="7_wkfwh"]
+[ext_resource type="Texture2D" uid="uid://crhgmw637dqkx" path="res://assets/spritesheets/hair_top.png" id="8_jmhfo"]
+[ext_resource type="Texture2D" uid="uid://b26vmjou1k3q" path="res://assets/spritesheets/hat.png" id="9_lch1p"]
+[ext_resource type="Texture2D" uid="uid://cirntnvkl14l" path="res://assets/spritesheets/left_ear.png" id="10_6dq7l"]
+[ext_resource type="Texture2D" uid="uid://b14q1388ahmbd" path="res://assets/spritesheets/right_ear.png" id="11_orgg7"]
+[ext_resource type="Texture2D" uid="uid://cifnpc8l4pcxt" path="res://assets/spritesheets/top.png" id="12_ujt2g"]
+[ext_resource type="Texture2D" uid="uid://cm640a8omgldt" path="res://assets/spritesheets/pose.png" id="13_hvhfa"]
+[ext_resource type="Texture2D" uid="uid://ckul8ef7rndm1" path="res://assets/spritesheets/background.png" id="15_a241f"]
+
+[node name="GameplayArea" type="Node2D"]
+script = ExtResource("1_86spa")
+
+[node name="Bottom" type="Sprite2D" parent="."]
+texture = ExtResource("2_kbeih")
+centered = false
+offset = Vector2(30, 40)
+region_enabled = true
+region_rect = Rect2(0, 0, 300, 400)
+script = ExtResource("2_oyyh4")
+name_list = PackedStringArray("Classic", "None", "In the Navy", "Catch of the Day")
+
+[node name="Face" type="Sprite2D" parent="."]
+texture = ExtResource("4_plg1i")
+centered = false
+offset = Vector2(30, 40)
+region_enabled = true
+region_rect = Rect2(0, 0, 300, 400)
+script = ExtResource("2_oyyh4")
+name_list = PackedStringArray("Classic", "Uninspired", "Cheezed to Meetcha", "Hash-pirational")
+
+[node name="Footwear" type="Sprite2D" parent="."]
+texture = ExtResource("5_eaeb4")
+centered = false
+offset = Vector2(30, 40)
+region_enabled = true
+region_rect = Rect2(0, 0, 300, 400)
+script = ExtResource("2_oyyh4")
+name_list = PackedStringArray("Classic", "None", "In the Navy", "Sogged Clogs")
+
+[node name="HairBack" type="Sprite2D" parent="."]
+texture = ExtResource("6_ambhk")
+centered = false
+offset = Vector2(30, 40)
+region_enabled = true
+region_rect = Rect2(0, 0, 300, 400)
+script = ExtResource("2_oyyh4")
+name_list = PackedStringArray("Classic", "Retail Rat Tail", "Side or Die", "Bald and Brash")
+
+[node name="HairFront" type="Sprite2D" parent="."]
+texture = ExtResource("7_wkfwh")
+centered = false
+offset = Vector2(30, 40)
+region_enabled = true
+region_rect = Rect2(0, 0, 300, 400)
+script = ExtResource("2_oyyh4")
+name_list = PackedStringArray("Classic", "Retail Rat Tail", "Side or Die", "Bald and Brash")
+
+[node name="HairTop" type="Sprite2D" parent="."]
+texture = ExtResource("8_jmhfo")
+centered = false
+offset = Vector2(30, 40)
+region_enabled = true
+region_rect = Rect2(0, 0, 300, 400)
+script = ExtResource("2_oyyh4")
+name_list = PackedStringArray("Classic", "Retail Rat Tail", "Side or Die", "Bald and Brash")
+
+[node name="Hat" type="Sprite2D" parent="."]
+texture = ExtResource("9_lch1p")
+centered = false
+offset = Vector2(30, 40)
+region_enabled = true
+region_rect = Rect2(0, 0, 300, 400)
+script = ExtResource("2_oyyh4")
+name_list = PackedStringArray("Classic", "In the Navy", "Howdy Hat", "Kelpy Minogue", "None")
+
+[node name="LeftEar" type="Sprite2D" parent="."]
+texture = ExtResource("10_6dq7l")
+centered = false
+offset = Vector2(30, 40)
+region_enabled = true
+region_rect = Rect2(0, 0, 300, 400)
+script = ExtResource("2_oyyh4")
+name_list = PackedStringArray("Classic", "Catch of the Day", "Bullet Swole", "Marcel du Chomp")
+
+[node name="RightEar" type="Sprite2D" parent="."]
+texture = ExtResource("11_orgg7")
+centered = false
+offset = Vector2(30, 40)
+region_enabled = true
+region_rect = Rect2(0, 0, 300, 400)
+script = ExtResource("2_oyyh4")
+name_list = PackedStringArray("Classic", "Catch of the Day", "Bullet Swole", "Marcel du Chomp")
+
+[node name="Top" type="Sprite2D" parent="."]
+texture = ExtResource("12_ujt2g")
+centered = false
+offset = Vector2(30, 40)
+region_enabled = true
+region_rect = Rect2(0, 0, 300, 400)
+script = ExtResource("2_oyyh4")
+name_list = PackedStringArray("Classic", "None", "In the Navy", "Catch of the Day")
+
+[node name="Pose" type="Sprite2D" parent="."]
+texture = ExtResource("13_hvhfa")
+centered = false
+offset = Vector2(30, 40)
+region_enabled = true
+region_rect = Rect2(0, 0, 300, 400)
+script = ExtResource("5_o3um8")
+draw_order_list = Array[PackedStringArray]([PackedStringArray("hair_back", "right_ear", "left_ear", "pose", "footwear", "bottom", "top", "face", "hair_front", "hair_top", "hat"), PackedStringArray("hair_front", "face", "pose", "footwear", "bottom", "right_ear", "left_ear", "top", "hair_top", "hair_back", "hat"), PackedStringArray("hair_back", "right_ear", "left_ear", "pose", "bottom", "footwear", "top", "face", "hair_front", "hair_top", "hat")])
+disable_list_list = Array[PackedStringArray]([PackedStringArray(), PackedStringArray("face", "hair_front"), PackedStringArray("left_ear")])
+name_list = PackedStringArray("Uninspired", "Brave New World", "High Sea Croquis")
+
+[node name="Background" type="Sprite2D" parent="."]
+texture = ExtResource("15_a241f")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 360, 480)
+script = ExtResource("2_oyyh4")
+name_list = PackedStringArray("Pattern 0", "Pattern 1", "Pattern 2", "Pattern 3", "Pattern 4", "Pattern 5", "Pattern 6", "Pattern 7", "Pattern 8", "Pattern 9", "Pattern 10", "Pattern 11")

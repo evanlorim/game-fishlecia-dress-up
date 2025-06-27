@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://ceo78ycjrdy5x"]
+
+[ext_resource type="Script" path="res://objects/layer.gd" id="1_gnvkc"]
+
+[node name="Layer" type="Sprite2D"]
+centered = false
+offset = Vector2(30, 40)
+region_enabled = true
+region_rect = Rect2(0, 0, 300, 400)
+script = ExtResource("1_gnvkc")

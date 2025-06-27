@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://do2f8raw5b4k5"
+path="res://.godot/imported/magic_forest.fnt-b5d4be3fc1b3c65d39640270a7c6b549.fontdata"
+
+[deps]
+
+source_file="res://assets/fonts/magic_forest.fnt"
+dest_files=["res://.godot/imported/magic_forest.fnt-b5d4be3fc1b3c65d39640270a7c6b549.fontdata"]
+
+[params]
+
+fallbacks=[null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+compress=true
+scaling_mode=2
